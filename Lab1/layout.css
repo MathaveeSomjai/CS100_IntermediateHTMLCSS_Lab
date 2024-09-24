@@ -1,8 +1,8 @@
 /* ตั้งค่าระยะขอบ การเติม และ box-sizing */
-* {
+* { /*เครื่องหมาย * มีไว้เพื่อบอกว่าส่วนนี้ต้องใช้กับโค้ดทั้งหมด*/
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box; /*เพื่อให้บล็อคไซส์ออกมาเต็มหน้าจอ*/
 }
 
 /* ตั้งค่าแบบอักษรให้เป็น Arial */
@@ -10,22 +10,20 @@ body {
     font-family: Arial, sans-serif;
 }
 
-/* กำหนดรูปแบบให้กับส่วนต่างๆ ของหน้า */
-section {
-    margin: 10px;
-    /* เว้นระยะห่างรอบเนื้อหา */
+/* General styling for all sections */
+header,nav,article,div,footer {
     padding: 10px;
-    background-color: yellow;
-    /* พื้นหลังสีเหลือง */
+    /* Space around content */
+    background-color: rgb(0, 195, 255);
+    /* มีไว้ทำไมไม่เห็นเห็นสีเลอ */
     border: 1px solid gray;
-    /* ขอบเป็นเส้นทึบสีเทา */
+    /* Gray solid borders */
     text-align: center;
-    /* จัดข้อความให้อยู่กึ่งกลาง */
+    /* Center the text */
 }
 
 /* ตั้งค่าความกว้างสำหรับส่วนหัวและส่วนท้าย */
-header,
-footer {
+header,footer {
     width: 100%;
     /* กำหนดความกว้างเป็น 100% */
     background-color: lightgray;
@@ -34,9 +32,7 @@ footer {
 }
 
 /* วางตำแหน่ง nav, article, และ div เคียงข้างกันโดยใช้ float */
-nav,
-article,
-div {
+nav,article,div {
     float: left;
     /* วางเคียงข้างกัน */
     height: 200px;
@@ -62,7 +58,7 @@ div {
     background-color: lightcoral;
 }
 
-/* ทำให้แน่ใจว่าส่วนท้ายปรากฏอยู่ใต้ส่วนนำทาง บทความ และ div */
+/* ทำให้แน่ใจว่าส่วนท้ายปรากฏอยู่ใต้nav article และ div */
 footer {
     clear: both;
     /* ทำให้ footer ปรากฏใต้ทุกองค์ประกอบที่ลอยอยู่ */
