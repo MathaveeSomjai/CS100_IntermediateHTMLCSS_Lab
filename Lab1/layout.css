@@ -1,0 +1,69 @@
+/* ตั้งค่าระยะขอบ การเติม และ box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ตั้งค่าแบบอักษรให้เป็น Arial */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* กำหนดรูปแบบให้กับส่วนต่างๆ ของหน้า */
+section {
+    margin: 10px;
+    /* เว้นระยะห่างรอบเนื้อหา */
+    padding: 10px;
+    background-color: yellow;
+    /* พื้นหลังสีเหลือง */
+    border: 1px solid gray;
+    /* ขอบเป็นเส้นทึบสีเทา */
+    text-align: center;
+    /* จัดข้อความให้อยู่กึ่งกลาง */
+}
+
+/* ตั้งค่าความกว้างสำหรับส่วนหัวและส่วนท้าย */
+header,
+footer {
+    width: 100%;
+    /* กำหนดความกว้างเป็น 100% */
+    background-color: lightgray;
+    padding: 10px;
+    text-align: center;
+}
+
+/* วางตำแหน่ง nav, article, และ div เคียงข้างกันโดยใช้ float */
+nav,
+article,
+div {
+    float: left;
+    /* วางเคียงข้างกัน */
+    height: 200px;
+    /* กำหนดความสูงเพื่อการแสดงภาพ */
+}
+
+/* กำหนดความกว้างของ nav, article และ div */
+nav {
+    width: 20%;
+    /* ความกว้าง 20% สำหรับ nav */
+    background-color: lightblue;
+}
+
+article {
+    width: 60%;
+    /* ความกว้าง 60% สำหรับ article */
+    background-color: lightgreen;
+}
+
+div {
+    width: 20%;
+    /* ความกว้าง 20% สำหรับ div */
+    background-color: lightcoral;
+}
+
+/* ทำให้แน่ใจว่าส่วนท้ายปรากฏอยู่ใต้ส่วนนำทาง บทความ และ div */
+footer {
+    clear: both;
+    /* ทำให้ footer ปรากฏใต้ทุกองค์ประกอบที่ลอยอยู่ */
+}
